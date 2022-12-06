@@ -7,39 +7,37 @@
 The Fatiando a Terra project (https://www.fatiando.org) is a collection of
 open-source Python libraries for geophysics that cover a range of
 functionalities, from data download and processing to modelling and inversion.
+Each one of these libraries in the project was designed with their own
+scope of applications:
 
-The history of this project started in 2010 in South America as a simple Python
-library as part of a PhD Thesis. Over time, Fatiando a Terra grew and the team
-of developers matured and established best practices for maintaining software
-projects in the open. At the same time, a community began to form around this
-project what heavily encouraged its development, while contributors from
-around the world started getting involved through active participation.
+Harmonica is focused on processing and modelling gravity and
+magnetic data. It provides tools for gravity corrections like Bouguer and
+terrain effects; interpolations and upward continuation through equivalent
+sources; Fourier domain filters like vertical derivatives, upward continuation
+and reduction to the pole; forward modelling of geometries like prisms, point
+sources and tesseroids (a.k.a spherical prisms); and more.
+Boule hosts reference ellipsoids useful for applying coordinate
+conversions and normal gravity calculations.
+Verde offers tools for processing and interpolating any type of spatial data
+through a diverse set of methods, with a machine learning inspired approach.
+Pooch eases the process of downloading and caching data from the web with
+a very simple interface. And Ensaio offers a set of curated open-licensed
+datasets useful for teaching, practicing and probing our codes.
 
-Since 2018, the code base has been restructured in order to obtain a better
-infrastructure with the emerging geophysical ecosystem. It was split in smaller
-libraries, each one with a specific set of goals and scope of applications.
-Currently the project host libraries like Verde, for data processing and
-interpolations; Pooch, for data downloading and caching; Boule, for managing
-reference ellipsoids and compute normal gravity; Harmonica, processing and
-modelling gravity and magnetics; and Ensaio that offers a set of curated open
-datasets to teach and practice.
+The project started in 2010 in South America as a simple Python library as part
+of a PhD Thesis, and has since growth to include a global community of
+contributors. Its progress has been facilitated by the effort of always meeting
+the highest standards in software development. Through the adoption of best
+practices and a thoughtful design of its tools, the project provides well
+tested and well documented code that is easy to use, regardless of the Python
+skills of its users.
+This has led the project to be used in real world applications like scientific
+research and geophysical exploration within industry and academia.
 
-The project is notable for meeting the highest standards in software
-development. Through the application of best practices and a thoughtful design
-of its tools, it provides well tested and well documented code that is easy to
-use, regardless of the Python skills of its users.
-The high quality of these Python libraries allows other projects and scientists
-to rely on them as part as their own code, to conduct their research and also
-to develop new methodologies based on these tools.
-
-The Fatiando a Terra libraries are being used worldwide for teaching,
-performing scientific research, inside the industry, and also as dependencies
-of other software packges: like Pooch that is being used by projects like SciPy
-and scikit-image, among others.
-
-<!-- What do we want to show? More geophyiscal oriented -->
-
-During this talk we will introduce the project, its libraries and their
-capabilities. We will also showcase how we can use them for processing gravity
-and magnetic real world data, relying as well on the existing tools available
-in the scientific open-source Python ecosystem.
+During this talk we'll provide an overview of the tools in the Fatiando
+project, demonstrate their functionalities using examples from research and
+industry applications, and take a look at some code snippets to showcase its
+ease of use.
+We will also take the opportunity to discuss upcoming developments, our roadmap
+for the future and which are the most requested features that are currently
+missing in our tools.
