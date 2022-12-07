@@ -2,7 +2,7 @@
 
 ## Authors
 
-Santiago Soler<sup>1</sup>
+[Santiago Soler](https://www.santisoler.com)<sup>1</sup>
 
 > 1. Department of Earth, Ocean and Atmospheric Sciences, University of British
 >    Columbia
