@@ -1,5 +1,12 @@
 # Fatiando a Terra: Open-source tools for geophysics
 
+## Authors
+
+Santiago Soler<sup>1</sup>
+
+> 1. Department of Earth, Ocean and Atmospheric Sciences, University of British
+>    Columbia
+
 ## Abstract
 
 <!-- a little about the project -->
