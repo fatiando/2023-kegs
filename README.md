@@ -15,7 +15,7 @@ The Fatiando a Terra project (https://www.fatiando.org) is a collection of
 open-source Python libraries for geophysics that cover a range of
 functionalities, from data download and processing to modelling and inversion.
 Each one of the libraries in the project was designed with their own
-scope of applications:
+scope of applications.
 
 Harmonica is focused on processing and modelling gravity and
 magnetic data. It provides tools for gravity corrections like Bouguer and
