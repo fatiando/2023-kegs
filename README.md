@@ -46,5 +46,4 @@ project, demonstrate their functionalities using examples from research and
 industry applications, and take a look at some code snippets to showcase its
 ease of use.
 We will also take the opportunity to discuss upcoming developments, our roadmap
-for the future and which are the most requested features that are currently
-missing in our tools.
+for the future and plans for implementing highly requested features.
