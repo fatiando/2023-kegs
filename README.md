@@ -12,7 +12,7 @@
 <!-- a little about the project -->
 
 The Fatiando a Terra project (https://www.fatiando.org) is a collection of
-open-source Python libraries for geophysics that cover a range of
+open-source Python libraries for geophysics that cover a wide range of
 functionalities, from data download and processing to modelling and inversion.
 Each one of the libraries in the project was designed with their own
 scope of applications.
@@ -44,6 +44,6 @@ industry and academia.
 During this talk we'll provide an overview of the tools in the Fatiando
 project, demonstrate their functionalities using examples from research and
 industry applications, and take a look at some code snippets to showcase its
-ease of use.
+capabilities and ease of use.
 We will also take the opportunity to discuss upcoming developments, our roadmap
 for the future and plans for implementing highly requested features.
