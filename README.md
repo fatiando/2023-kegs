@@ -3,6 +3,7 @@
 ## Authors
 
 [Santiago Soler](https://www.santisoler.com)<sup>1</sup>
+[Lindsey J. Heagy](https://lindseyjh.ca/)<sup>1</sup>
 
 > 1. Department of Earth, Ocean and Atmospheric Sciences, University of British
 >    Columbia
@@ -12,7 +13,7 @@
 <!-- a little about the project -->
 
 The Fatiando a Terra project (https://www.fatiando.org) is a collection of
-open-source Python libraries for geophysics that cover a wide range of
+open-source Python libraries for geophysics that covers a wide range of
 functionalities, from data download and processing to modelling and inversion.
 Each one of the libraries in the project was designed with their own
 scope of applications.
