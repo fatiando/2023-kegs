@@ -169,57 +169,46 @@ wouldn't exist.
 
 ## References
 
-Cockett, R., Kang, S., Heagy, L. J., Pidlisecky, A., & Oldenburg, D. W. (2015).
-SimPEG: An open source framework for simulation and gradient based parameter
-estimation in geophysical applications. Computers & Geosciences, 85, 142–154.
-https://doi.org/10.1016/j.cageo.2015.09.015
-
-Li, X., & Götze, H. (2001). Ellipsoid, geoid, gravity, geodesy, and geophysics.
-GEOPHYSICS, 66(6), Article 6. https://doi.org/10.1190/1.1487109
-
-May, R., Arms, S., Marsh, P., Bruning, E., Leeman, J., Bruick, Z., & Camron, M.
-D. (2016). MetPy: A Python Package for Meteorological Data. UCAR/NCAR
-- Unidata. https://doi.org/10.5065/D6WW7G29
-
-The ObsPy Development Team (2019). ObsPy 1.1.1 (1.1.1). Zenodo.
-https://doi.org/10.5281/ZENODO.1040770
-
-Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel,
-O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J.,
-Passos, A., Cournapeau, D., Brucher, M., Perrot, M., y Duchesnay, E. (2011).
-Scikit-learn: Machine learning in Python. Journal of Machine Learning Research,
-12:2825–2830.
-
-Rücker, C., Günther, T., & Wagner, F. M. (2017). pyGIMLi: An open-source
-library for modelling and inversion in geophysics. Computers & Geosciences,
-109, 106–123. https://doi.org/10.1016/j.cageo.2017.07.011
-
-Shapero, D., Badgeley, J., & Hoffman, A. (2020). icepack: Glacier flow modeling
-with the finite element method in Python (v1.0.0). Zenodo.
-https://doi.org/10.5281/ZENODO.1205640
-
-Stockwell, J. W. (1999). The CWP/SU: Seismic Un∗x package. Computers
-& Geosciences, 25(4), 415–419. https://doi.org/10.1016/S0098-3004(98)00145-9
-
-Uieda, L., V. C. Oliveira Jr, and V. C. F. Barbosa (2013), Modeling the Earth
-with Fatiando a Terra, Proceedings of the 12th Python in Science Conference,
-pp. 91 - 98.
-
-de la Varga, M., Schaaf, A., & Wellmann, F. (2019). GemPy 1.0: Open-source
-stochastic geological modeling and inversion. Geoscientific Model Development,
-12(1), 1–32. https://doi.org/10.5194/gmd-12-1-2019
-
-Virtanen, P., Gommers, R., Oliphant, T. E., Haberland, M., Reddy, T.,
-Cournapeau, D., Burovski, E., Peterson, P., Weckesser, W., Bright, J., van der
-Walt, S. J., Brett, M., Wilson, J., Millman, K. J., Mayorov, N., Nelson, A. R.
-J., Jones, E., Kern, R., Larson, E., … Vázquez-Baeza, Y. (2020). SciPy 1.0:
-Fundamental algorithms for scientific computing in Python. Nature Methods,
-17(3), 261–272. https://doi.org/10.1038/s41592-019-0686-2
-
-van der Walt, S., Schönberger, J. L., Nunez-Iglesias, J., Boulogne, F., Warner,
-J. D., Yager, N., Gouillart, E., & Yu, T. (2014). scikit-image: Image
-processing in Python. PeerJ, 2, e453. https://doi.org/10.7717/peerj.453
-
-Wessel, P., Luis, J. F., Uieda, L., Scharroo, R., Wobbe, F., Smith, W. H. F.,
-& Tian, D. (2019). The Generic Mapping Tools Version 6. Geochemistry,
-Geophysics, Geosystems, 20(11), 5556–5564. https://doi.org/10.1029/2019GC008515
+- Cockett, R., Kang, S., Heagy, L. J., Pidlisecky, A., & Oldenburg, D. W.
+  (2015). SimPEG: An open source framework for simulation and gradient based
+  parameter estimation in geophysical applications. Computers & Geosciences,
+  85, 142–154. https://doi.org/10.1016/j.cageo.2015.09.015
+- Li, X., & Götze, H. (2001). Ellipsoid, geoid, gravity, geodesy, and
+  geophysics. GEOPHYSICS, 66(6), Article 6. https://doi.org/10.1190/1.1487109
+- May, R., Arms, S., Marsh, P., Bruning, E., Leeman, J., Bruick, Z., & Camron,
+  M. D. (2016). MetPy: A Python Package for Meteorological Data.
+  UCAR/NCAR-Unidata. https://doi.org/10.5065/D6WW7G29
+- The ObsPy Development Team (2019). ObsPy 1.1.1 (1.1.1). Zenodo.
+  https://doi.org/10.5281/ZENODO.1040770
+- Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel,
+  O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J.,
+  Passos, A., Cournapeau, D., Brucher, M., Perrot, M., y Duchesnay, E. (2011).
+  Scikit-learn: Machine learning in Python. Journal of Machine Learning
+  Research, 12:2825–2830.
+- Rücker, C., Günther, T., & Wagner, F. M. (2017). pyGIMLi: An open-source
+  library for modelling and inversion in geophysics. Computers & Geosciences,
+  109, 106–123. https://doi.org/10.1016/j.cageo.2017.07.011
+- Shapero, D., Badgeley, J., & Hoffman, A. (2020). icepack: Glacier flow
+  modeling with the finite element method in Python (v1.0.0). Zenodo.
+  https://doi.org/10.5281/ZENODO.1205640
+- Stockwell, J. W. (1999). The CWP/SU: Seismic Un∗x package. Computers
+  & Geosciences, 25(4), 415–419. https://doi.org/10.1016/S0098-3004(98)00145-9
+- Uieda, L., V. C. Oliveira Jr, and V. C. F. Barbosa (2013), Modeling the Earth
+  with Fatiando a Terra, Proceedings of the 12th Python in Science Conference,
+  pp. 91 - 98.
+- de la Varga, M., Schaaf, A., & Wellmann, F. (2019). GemPy 1.0: Open-source
+  stochastic geological modeling and inversion. Geoscientific Model
+  Development, 12(1), 1–32. https://doi.org/10.5194/gmd-12-1-2019
+- Virtanen, P., Gommers, R., Oliphant, T. E., Haberland, M., Reddy, T.,
+  Cournapeau, D., Burovski, E., Peterson, P., Weckesser, W., Bright, J., van
+  der Walt, S. J., Brett, M., Wilson, J., Millman, K. J., Mayorov, N., Nelson,
+  A. R. J., Jones, E., Kern, R., Larson, E., … Vázquez-Baeza, Y. (2020). SciPy
+  1.0: Fundamental algorithms for scientific computing in Python. Nature
+  Methods, 17(3), 261–272. https://doi.org/10.1038/s41592-019-0686-2
+- van der Walt, S., Schönberger, J. L., Nunez-Iglesias, J., Boulogne, F.,
+  Warner, J. D., Yager, N., Gouillart, E., & Yu, T. (2014). scikit-image: Image
+  processing in Python. PeerJ, 2, e453. https://doi.org/10.7717/peerj.453
+- Wessel, P., Luis, J. F., Uieda, L., Scharroo, R., Wobbe, F., Smith, W. H. F.,
+  & Tian, D. (2019). The Generic Mapping Tools Version 6. Geochemistry,
+  Geophysics, Geosystems, 20(11), 5556–5564.
+  https://doi.org/10.1029/2019GC008515
