@@ -159,7 +159,31 @@ fetch the example datasets.
 <!-- Who are using fatiando and their achievements. -->
 <!-- Future goals? -->
 
-## Acknowledgements (Optional)
+After more than a decade since Fatiando a Terra project was born, the project
+lives thanks to a network of collaborators and users that actively participate
+in its development.
+It keeps proving that collaborative software development for science and
+industry is possible under an open-source environment.
+Its development turns out to be useful not only for their direct users, but
+also to the whole ecosystem: by proving tools they can actually depend and by
+setting an example of how to develop and maintain open-source geoscientific
+tools.
+
+Fatiando has been used by students as researchers as core parts of their Thesis
+and scientific articles, but also by the industry.
+This highlights the importance of nursing open-source tools that people are
+willing to invest time in learning and harnessing for their specific goals.
+
+The future of the project expects exciting new features: a new magnetic forward
+modelling functions are being developed for Harmonica along with new
+types of equivalent sources and FFT-based transformations.
+The inversion framework for the old `fatiando` library is missing in the new
+tools, but we are looking forward to implement an improved one, focusing on
+performing types of inversions that are missing in other packages of the
+geophysical Python ecosystem.
+
+
+## Acknowledgements
 
 We are indebted to the developers and maintainers of all the open-source
 software and particularly to the users and contributors of Fatiando a Terra.
