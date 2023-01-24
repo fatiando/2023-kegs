@@ -16,37 +16,38 @@
 develop os tool for a more collaborative and reproducible science -->
 
 The relation between geophysical research and computational solutions dates
-back to the very origins of the latter.
+back to the very origins of silicon-based computers.
 Scientists and industry saw in computational power a mean to solve new
 challenging problems within geosciences and exploration.
 They offer the possibility to process large amount of data, generate
 visualizations for interpretation and ultimately to perform inversions to build
-models of the subsurface.
+models of the subsurface. All of which were key to improve the decision making
+process.
 
 Companies and researchers started developing their own software to perform
-tasks likes these.
-Even most of them built in-house tools, the appearance of open-source software
-for geosciences happened as early as computer started to being use in the
-field.
+these types of tasks.
+Although most of them built in-house tools, the appearance of open-source
+software for geosciences happened as early as the 70s and 80s.
 Projects like Seismic Unix (Stockwell, 1999) and GMT (Wessel et al., 2019) are
-pioneer examples of this.
+pioneer examples.
 
 Fast-forwarding to this millennia, the popularity that the Python language
-developed among every scientific field and also in the industry planted the
-seed for a ever-growing open-source geoscientific ecosystem.
+developed among every scientific field planted the seed for an ever-growing
+open-source geoscientific ecosystem.
 Python tools aimed to solve geoscientific problems proliferated, specially
 since the beginnings of the second decade of the century.
 
-In this scenario the Fatiando a Terra project (Uieda et al., 2013;
-https://www.fatiando.org) for developing open-source Python tools for
-geophysics was born.
+In this scenario Fatiando a Terra (Uieda et al., 2013;
+https://www.fatiando.org) was born: a project for developing open-source Python
+tools for geophysics.
 It started in 2010 in South America as a simple Python library as part of the
 PhD Thesis of Leonardo Uieda, but due to its open-source license and good
 online documentation it started being used by researchers and industry
 consultants from different regions of the world.
-As more people started to use it, some of them turned out to be contributors to
-the project by writing new features, fixing bugs or improving its
-documentation.
+As more people started to use it, some of them became contributors
+by writing new features, fixing bugs or improving its documentation.
+The open-source nature of the project allowed it to grow under
+a community-driven development.
 
 Nowadays the project consists in a set of Python libraries for geosciences,
 each one of them with a very specific scope of application. Its main goals are
@@ -64,8 +65,9 @@ In its origins, Fatiando a Terra consisted in a single Python library named
 that the project offered.
 After years of development this designed was proved to be flawed: its code base
 grew too large for a single library, making it hard to maintain and extend its
-functionalities. Moreover, it hosted a wide variety of codes, from production
-ready tools until toy problems meant to be used for educational purposes.
+functionalities. Moreover, it hosted a wide variety of functionalities: from
+production ready tools until toy problems meant to be used for educational
+purposes.
 
 In 2018 the project decided to redesign its code base by splitting the old
 `fatiando` library into several smaller libraries, each one with a very
@@ -74,14 +76,16 @@ This simplifies both the adoption of the libraries and also their development.
 Most users look for only a subset of the tools offered by the project, and
 having them divided in libraries reduces the size of the libraries they depend
 on.
-Moreover, contributors only need to learn the code of a single library in order
-to develop new features, write documentation or fix bugs; instead of having to
-acknowledge a larger code base.
+As a side effect, anyone interested in changing the code of one of our
+libraries now needs to be familiar with a smaller code base, making it easier
+for the community to contribute to the project.
 
-By that time the geoscientific ecosystem had already seen a major growth.
+By that time the geoscientific Python ecosystem had already seen a major
+growth.
 Libraries like SimPEG (Cockett et al., 2015), GemPy (de la Varga et al., 2019),
-pyGIMLi (Rücker et al., 2017) and ObsPy (Obspy, 2019) were already offering
-a wide range of tools for geophysics.
+pyGIMLi (Rücker et al., 2017) and ObsPy (Obspy, 2019) were already stablished
+and providing scientists and industry with a wide range of tools for research
+and exploration.
 The project decided to invest on extending this growing geoscientific
 ecosystem, rather than reinventing features already developed by other
 projects.
@@ -104,7 +108,7 @@ grid projection and more coordinates manipulation utilities.
 ### Boule
 
 Boule is a very thin library that hosts classes for representing geodetic
-reference ellipsoids for the Earth and also for celestial bodies of the solar
+reference ellipsoids for the Earth and for celestial bodies of the solar
 system like the Moon, Mars, Venus and Mercury.
 These classes also offer methods to perform coordinate conversions between
 geodetic and geocentric spherical systems, and to compute the normal gravity
@@ -115,9 +119,8 @@ analytic solution (Li and Götze, 2001).
 
 Harmonica offers functions and classes for processing and modelling gravity and
 magnetic data.
-It hosts functions for forward modelling the gravity fields of point sources
-and rectangular prisms and also tesseroids (a.k.a spherical prisms) in
-spherical coordinates.
+It hosts functions for forward modelling the gravity fields of point sources,
+rectangular prisms and also tesseroids (a.k.a spherical prisms).
 It can perform gravity corrections from a simple Bouguer to a full terrain
 correction through forward modelling digital elevation models with prisms.
 Regular grids can be transformed using FFT-based filters like upward
@@ -159,15 +162,15 @@ fetch the example datasets.
 <!-- Who are using fatiando and their achievements. -->
 <!-- Future goals? -->
 
-After more than a decade since Fatiando a Terra project was born, the project
-lives thanks to a network of collaborators and users that actively participate
-in its development.
-It keeps proving that collaborative software development for science and
-industry is possible under an open-source environment.
+After more than a decade since them Fatiando a Terra project was born, the
+project lives thanks to a network of collaborators and users that actively
+participate in its development.
+It keeps proving that a collaborative and community-driven software development
+for science and industry is possible under an open-source environment.
 Its development turns out to be useful not only for their direct users, but
-also to the whole ecosystem: by proving tools they can actually depend and by
-setting an example of how to develop and maintain open-source geoscientific
-tools.
+also to the whole ecosystem: by providing tools that other projects can depend
+on and by setting an example of how to develop and maintain open-source
+geoscientific tools.
 
 Fatiando has been used by students as researchers as core parts of their Thesis
 and scientific articles, but also by the industry.
