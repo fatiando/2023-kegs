@@ -21,8 +21,8 @@ Scientists and industry saw in computational power a mean to solve new
 challenging problems within geosciences and exploration.
 They offer the possibility to process large amount of data, generate
 visualizations for interpretation and ultimately to perform inversions to build
-models of the subsurface. All of which were key to improve the decision making
-process.
+models of the subsurface. All of which are key to improve decision making
+processes.
 
 Companies and researchers started developing their own software to perform
 these types of tasks.
@@ -45,16 +45,17 @@ PhD Thesis of Leonardo Uieda, but due to its open-source license and good
 online documentation it started being used by researchers and industry
 consultants from different regions of the world.
 As more people started to use it, some of them became contributors
-by writing new features, fixing bugs or improving its documentation.
+by writing new features, fixing bugs, adding more test or improving the
+documentation.
 The open-source nature of the project allowed it to grow under
 a community-driven development.
 
 Nowadays the project consists in a set of Python libraries for geosciences,
 each one of them with a very specific scope of application. Its main goals are
-to provide open-source software tools that are easy to use but also well
+to provide open-source software tools that are easy to use and also well
 designed, tested and documented.
 During this talk we'll provide an overview of the tools available in the
-project, demonstrate their functionalities using examples from research and
+project and demonstrate their functionalities using examples from research and
 industry applications.
 
 
@@ -66,7 +67,7 @@ that the project offered.
 After years of development this designed was proved to be flawed: its code base
 grew too large for a single library, making it hard to maintain and extend its
 functionalities. Moreover, it hosted a wide variety of functionalities: from
-production ready tools until toy problems meant to be used for educational
+production ready tools up to toy problems meant to be used for educational
 purposes.
 
 In 2018 the project decided to redesign its code base by splitting the old
@@ -77,18 +78,18 @@ Most users look for only a subset of the tools offered by the project, and
 having them divided in libraries reduces the size of the libraries they depend
 on.
 As a side effect, anyone interested in changing the code of one of our
-libraries now needs to be familiar with a smaller code base, making it easier
+libraries now needs to familiarize with a smaller code base, making it easier
 for the community to contribute to the project.
 
 By that time the geoscientific Python ecosystem had already seen a major
 growth.
 Libraries like SimPEG (Cockett et al., 2015), GemPy (de la Varga et al., 2019),
-pyGIMLi (Rücker et al., 2017) and ObsPy (Obspy, 2019) were already stablished
+pyGIMLi (Rücker et al., 2017) and ObsPy (Obspy, 2019) were already established
 and providing scientists and industry with a wide range of tools for research
 and exploration.
 The project decided to invest on extending this growing geoscientific
 ecosystem, rather than reinventing features already developed by other
-projects.
+packages.
 The introduction of smaller and narrow scoped libraries allowed other projects
 to use on them, avoiding having a single large dependency for only a portion of
 its features.
