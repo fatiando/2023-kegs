@@ -262,6 +262,7 @@ grid = eq_sources.grid(
 
 The full code for running this example in addition with more detailed
 explanation of the process can be found in https://www.fatiando.org/tutorials.
+Figures were produced using pyGMT (Uieda, 2022).
 
 
 ## Conclusions
@@ -320,26 +321,13 @@ wouldn't exist.
   (2015). SimPEG: An open source framework for simulation and gradient based
   parameter estimation in geophysical applications. Computers & Geosciences,
   85, 142–154. https://doi.org/10.1016/j.cageo.2015.09.015
-- Harris, C. R., Millman, K. J., van der Walt, S. J., Gommers, R., Virtanen,
-  P., Cournapeau, D., Wieser, E., Taylor, J., Berg, S., Smith, N. J., Kern, R.,
-  Picus, M., Hoyer, S., van Kerkwijk, M. H., Brett, M., Haldane, A., del Río,
-  J. F., Wiebe, M., Peterson, P., … Oliphant, T. E. (2020). Array programming
-  with NumPy. Nature, 585(7825), 357–362.
-  https://doi.org/10.1038/s41586-020-2649-2
-- Hoyer, S., & Hamman, J. (2017). xarray: N-D labeled Arrays and Datasets in
-  Python. Journal of Open Research Software, 5(1), 10.
-  https://doi.org/10.5334/jors.148
 - Li, X., & Götze, H. (2001). Ellipsoid, geoid, gravity, geodesy, and
   geophysics. GEOPHYSICS, 66(6), Article 6. https://doi.org/10.1190/1.1487109
 - May, R., Arms, S., Marsh, P., Bruning, E., Leeman, J., Bruick, Z., & Camron,
   M. D. (2016). MetPy: A Python Package for Meteorological Data.
   UCAR/NCAR-Unidata. https://doi.org/10.5065/D6WW7G29
-- McKinney, W. (2010). Data Structures for Statistical Computing in Python.
-  56–61. https://doi.org/10.25080/Majora-92bf1922-00a
 - The ObsPy Development Team (2019). ObsPy 1.1.1 (1.1.1). Zenodo.
   https://doi.org/10.5281/ZENODO.1040770
-- The Pandas Development Team (2023). pandas-dev/pandas: Pandas (v1.5.3).
-  Zenodo. https://doi.org/10.5281/ZENODO.3509134
 - Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel,
   O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J.,
   Passos, A., Cournapeau, D., Brucher, M., Perrot, M., y Duchesnay, E. (2011).
@@ -356,6 +344,12 @@ wouldn't exist.
 - Uieda, L., V. C. Oliveira Jr, and V. C. F. Barbosa (2013), Modeling the Earth
   with Fatiando a Terra, Proceedings of the 12th Python in Science Conference,
   pp. 91 - 98.
+- Uieda, Leonardo, Tian, Dongdong, Leong, Wei Ji, Jones, Max, Schlitzer,
+  William, Grund, Michael, Toney, Liam, Fröhlich, Yvonne, Yao, Jiayuan, Magen,
+  Yohai, Materna, Kathryn, Belem, Andre, Newton, Tyler, Anant, Abhishek,
+  Ziebarth, Malte, Quinn, Jamie, & Wessel, Paul. (2022). PyGMT: A Python
+  interface for the Generic Mapping Tools (v0.8.0). Zenodo.
+  https://doi.org/10.5281/zenodo.7481934
 - de la Varga, M., Schaaf, A., & Wellmann, F. (2019). GemPy 1.0: Open-source
   stochastic geological modeling and inversion. Geoscientific Model
   Development, 12(1), 1–32. https://doi.org/10.5194/gmd-12-1-2019
@@ -365,9 +359,6 @@ wouldn't exist.
   A. R. J., Jones, E., Kern, R., Larson, E., … Vázquez-Baeza, Y. (2020). SciPy
   1.0: Fundamental algorithms for scientific computing in Python. Nature
   Methods, 17(3), 261–272. https://doi.org/10.1038/s41592-019-0686-2
-- van der Walt, S., Schönberger, J. L., Nunez-Iglesias, J., Boulogne, F.,
-  Warner, J. D., Yager, N., Gouillart, E., & Yu, T. (2014). scikit-image: Image
-  processing in Python. PeerJ, 2, e453. https://doi.org/10.7717/peerj.453
 - Wessel, P., Luis, J. F., Uieda, L., Scharroo, R., Wobbe, F., Smith, W. H. F.,
   & Tian, D. (2019). The Generic Mapping Tools Version 6. Geochemistry,
   Geophysics, Geosystems, 20(11), 5556–5564.
