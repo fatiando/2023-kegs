@@ -230,6 +230,7 @@ with fig.subplot(
     figsize=("19c", "8c"),
     autolabel="(a)+jTC",
     sharey="l",
+    frame="WSrt",
 ):
     with fig.set_panel(panel=0, fixedlabel="(a) Gravity disturbance"):
         # Plot relief
@@ -286,7 +287,7 @@ with fig.subplot(
             cmap=True,
             style="c2p",
             projection=projection,
-            frame="fg",
+            frame=["afg", "wSne"],
         )
         fig.colorbar(frame='af+l"mGal"')
 
@@ -345,7 +346,6 @@ with fig.subplot(
             residual_grid.gravity_residual,
             shading="+a45+nt0.15",
             projection=projection,
-            frame="f",
         )
         fig.colorbar(frame="af")
         fig.plot(
@@ -353,6 +353,7 @@ with fig.subplot(
             y=data.latitude,
             style="c0.5p",
             color="black",
+            frame=["wSne", "afg"],
         )
         fig.colorbar(frame='af+l"mGal"')
 
