@@ -61,10 +61,17 @@ documentation.
 The open-source nature of the project allowed it to grow under
 a community-driven development.
 
-Nowadays the project consists in a set of Python libraries for geosciences,
-each one of them with a very specific scope of application. Its main goals are
-to provide open-source software tools that are easy to use and also well
-designed, tested and documented.
+The main goal of the project is to to provide open-source software tools that
+are easy to use and also well designed, tested and documented.
+Nowadays it consists in a set of Python libraries for geosciences, each one of
+them with a very specific scope of application.
+They offer software solutions for downloading and caching data from the web,
+handling and interpolating spatial data, computing normal gravity of reference
+ellipsoids through analytic solutions, processing potential fields data through
+frequency-domain filters, forward modelling gravity and magnetic fields of
+different simple geometrical bodies and grid harmonic data with equivalent
+sources.
+
 During this talk we'll provide an overview of the tools available in the
 project and demonstrate their functionalities using examples from research and
 industry applications.
