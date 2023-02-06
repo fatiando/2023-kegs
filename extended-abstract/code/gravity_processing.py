@@ -21,14 +21,14 @@ path_topography = ensaio.fetch_earth_topography(version=1)
 path_geoid = ensaio.fetch_earth_geoid(version=1)
 
 # Load data
-data = pd.read_csv(path_gravity)
+raw_data = pd.read_csv(path_gravity)
 topography = xr.load_dataarray(path_topography)
 geoid = xr.load_dataarray(path_geoid)
 
 # Crop data
 region = (25, 32, -27, -23)
 region_pad = vd.pad_region(region, pad=5)
-data = data[vd.inside((data.longitude, data.latitude), region)]
+data = raw_data[vd.inside((raw_data.longitude, raw_data.latitude), region)]
 geoid = geoid.sel(longitude=slice(*region_pad[:2]), latitude=slice(*region_pad[2:]))
 topography = topography.sel(
     longitude=slice(*region_pad[:2]), latitude=slice(*region_pad[2:])
@@ -123,78 +123,164 @@ residual_grid = eqs.grid(
 # Plot
 # ====
 
+# --------------------------------
+# Plot the downloaded gravity data
+# --------------------------------
 filepath = pathlib.Path(__file__).parent.resolve()
-outfile = filepath / ".." / "figs" / "figure.png"
-
-marker_style = ("c2p",)
-projection = ("M?",)
-frame = ("afg",)
-kwargs = dict(
-    style=marker_style,
-    projection=projection,
-    frame=frame,
-    cmap=True,
-)
 
 # Create figure with subplots
 fig = pygmt.Figure()
+projection = "M?"
+
+# Get minmax values for the relief in the background
+raw_region = vd.get_region((raw_data.longitude, raw_data.latitude))
+large_relief = pygmt.datasets.load_earth_relief(resolution="01m", region=raw_region)
+relief_series = [large_relief.values.min(), large_relief.values.max()]
+
 with fig.subplot(
-    nrows=2,
+    nrows=1,
     ncols=2,
-    figsize=("18c", "15c"),
-    autolabel="(a)+jTC",
-    sharex="b",  # shared x-axis on the bottom side
-    sharey="l",  # shared y-axis on the left side
+    figsize=("19c", "8c"),
+    autolabel="(a)",
 ):
-    # Disturbance
-    with fig.set_panel(panel=0, fixedlabel="(a) Gravity disturbance"):
-        maxabs = vd.maxabs(data.gravity_disturbance_mgal)
-        pygmt.makecpt(cmap="polar+h", series=[-maxabs, maxabs])
-        fig.plot(
-            x=data.longitude,
-            y=data.latitude,
-            color=data.gravity_disturbance_mgal,
-            **kwargs
+    with fig.set_panel(panel=0):
+        pygmt.makecpt(
+            cmap="gray",
+            series=relief_series,
         )
-        fig.colorbar(frame="af")
-    # Bouguer
-    with fig.set_panel(panel=1, fixedlabel="(b) Bouguer disturbance"):
-        maxabs = vd.maxabs(data.gravity_bouguer_mgal)
-        pygmt.makecpt(cmap="polar", series=[-maxabs, maxabs])
-        fig.plot(
-            x=data.longitude, y=data.latitude, color=data.gravity_bouguer_mgal, **kwargs
-        )
-        fig.colorbar(frame="af")
-
-    # Residual
-    with fig.set_panel(panel=2, fixedlabel="(c) Residual field"):
-        scale = vd.maxabs(data.gravity_residual_mgal, residual_grid.gravity_residual)
-        pygmt.makecpt(cmap="polar", series=[-scale, scale])
-        fig.plot(
-            x=data.longitude,
-            y=data.latitude,
-            color=data.gravity_residual_mgal,
-            **kwargs
-        )
-        fig.colorbar(frame="af")
-
-    # Residual grid
-    with fig.set_panel(panel=3, fixedlabel="(d) Gridded residual field"):
-        # scale = vd.maxabs(residual_grid.gravity_residual)
-        pygmt.makecpt(cmap="polar", series=[-scale, scale], no_bg=True)
         fig.grdimage(
-            residual_grid.gravity_residual,
-            shading="+a45+nt0.15",
+            "@earth_relief_01m",
+            region=raw_region,
             projection=projection,
-            frame=frame,
+            shading="+a45+nt0.7",
+            cmap=True,
         )
-        fig.colorbar(frame="af")
+        fig.coast(
+            water="#8fcae7",
+            transparency=50,
+        )
+        pygmt.makecpt(
+            cmap="viridis",
+            series=[raw_data.gravity_mgal.min(), raw_data.gravity_mgal.max()],
+        )
+        fig.plot(
+            x=raw_data.longitude,
+            y=raw_data.latitude,
+            color=raw_data.gravity_mgal,
+            cmap=True,
+            style="c1.5p",
+            projection=projection,
+            frame="afg",
+        )
+        fig.plot(
+            x=[region[0], region[1], region[1], region[0], region[0]],
+            y=[region[3], region[3], region[2], region[2], region[3]],
+            pen="1p,orangered1,-",
+        )
+        fig.colorbar(frame='af+l"mGal"')
+    with fig.set_panel(panel=1):
+        pygmt.makecpt(
+            cmap="gray",
+            series=relief_series,
+        )
+        fig.grdimage(
+            "@earth_relief_01m",
+            region=region,
+            projection=projection,
+            shading="+a45+nt0.7",
+            cmap=True,
+        )
+        pygmt.makecpt(
+            cmap="viridis",
+            series=[data.gravity_mgal.min(), data.gravity_mgal.max()],
+        )
         fig.plot(
             x=data.longitude,
             y=data.latitude,
-            style="c0.5p",
-            color="black",
+            color=data.gravity_mgal,
+            cmap=True,
+            style="c2p",
+            projection=projection,
+            frame="afg",
         )
+        fig.colorbar(frame='af+l"mGal"')
 
-fig.savefig(outfile, dpi=300)
+fig.savefig(filepath / ".." / "figs" / "southern-africa-gravity.png", dpi=300)
 fig.show()
+
+# #####################################################################################
+
+# outfile = filepath / ".." / "figs" / "figure.png"
+#
+# marker_style = ("c2p",)
+# projection = ("M?",)
+# frame = ("afg",)
+# kwargs = dict(
+#     style=marker_style,
+#     projection=projection,
+#     frame=frame,
+#     cmap=True,
+# )
+#
+# # Create figure with subplots
+# fig = pygmt.Figure()
+# with fig.subplot(
+#     nrows=2,
+#     ncols=2,
+#     figsize=("18c", "15c"),
+#     autolabel="(a)+jTC",
+#     sharex="b",  # shared x-axis on the bottom side
+#     sharey="l",  # shared y-axis on the left side
+# ):
+#     # Disturbance
+#     with fig.set_panel(panel=0, fixedlabel="(a) Gravity disturbance"):
+#         maxabs = vd.maxabs(data.gravity_disturbance_mgal)
+#         pygmt.makecpt(cmap="polar+h", series=[-maxabs, maxabs])
+#         fig.plot(
+#             x=data.longitude,
+#             y=data.latitude,
+#             color=data.gravity_disturbance_mgal,
+#             **kwargs
+#         )
+#         fig.colorbar(frame="af")
+#     # Bouguer
+#     with fig.set_panel(panel=1, fixedlabel="(b) Bouguer disturbance"):
+#         maxabs = vd.maxabs(data.gravity_bouguer_mgal)
+#         pygmt.makecpt(cmap="polar", series=[-maxabs, maxabs])
+#         fig.plot(
+#             x=data.longitude, y=data.latitude, color=data.gravity_bouguer_mgal, **kwargs
+#         )
+#         fig.colorbar(frame="af")
+#
+#     # Residual
+#     with fig.set_panel(panel=2, fixedlabel="(c) Residual field"):
+#         scale = vd.maxabs(data.gravity_residual_mgal, residual_grid.gravity_residual)
+#         pygmt.makecpt(cmap="polar", series=[-scale, scale])
+#         fig.plot(
+#             x=data.longitude,
+#             y=data.latitude,
+#             color=data.gravity_residual_mgal,
+#             **kwargs
+#         )
+#         fig.colorbar(frame="af")
+#
+#     # Residual grid
+#     with fig.set_panel(panel=3, fixedlabel="(d) Gridded residual field"):
+#         # scale = vd.maxabs(residual_grid.gravity_residual)
+#         pygmt.makecpt(cmap="polar", series=[-scale, scale], no_bg=True)
+#         fig.grdimage(
+#             residual_grid.gravity_residual,
+#             shading="+a45+nt0.15",
+#             projection=projection,
+#             frame=frame,
+#         )
+#         fig.colorbar(frame="af")
+#         fig.plot(
+#             x=data.longitude,
+#             y=data.latitude,
+#             style="c0.5p",
+#             color="black",
+#         )
+#
+# fig.savefig(outfile, dpi=300)
+# fig.show()
