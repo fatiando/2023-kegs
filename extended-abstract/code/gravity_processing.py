@@ -337,7 +337,7 @@ with fig.subplot(
             residual_grid.gravity_residual,
             shading="+a45+nt0.15",
             projection=projection,
-            frame="fg",
+            frame="f",
         )
         fig.colorbar(frame="af")
         fig.plot(
