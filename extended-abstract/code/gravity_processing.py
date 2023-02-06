@@ -124,6 +124,14 @@ residual_grid = eqs.grid(
 # ====
 filepath = pathlib.Path(__file__).parent.resolve()
 
+pygmt.config(
+    FONT_ANNOT="11p,Helvetica,black",
+    FONT_TITLE="12p,Helvetica,black",
+    FONT_LABEL="10p,Helvetica,black",
+    MAP_TITLE_OFFSET="0p",
+    MAP_FRAME_WIDTH="2p",
+)
+
 # --------------------------------
 # Plot the downloaded gravity data
 # --------------------------------
@@ -139,10 +147,10 @@ relief_series = [large_relief.values.min(), large_relief.values.max()]
 with fig.subplot(
     nrows=1,
     ncols=2,
-    figsize=("19c", "8c"),
-    autolabel="(a)",
+    figsize=("19c", "10c"),
+    autolabel="(a)+jTC",
 ):
-    with fig.set_panel(panel=0):
+    with fig.set_panel(panel=0, fixedlabel="(a) Observed gravity"):
         pygmt.makecpt(
             cmap="gray",
             series=relief_series,
@@ -177,7 +185,7 @@ with fig.subplot(
             pen="1p,orangered1,-",
         )
         fig.colorbar(frame='af+l"mGal"')
-    with fig.set_panel(panel=1):
+    with fig.set_panel(panel=1, fixedlabel="(b) Obs. gravity on Bushveld"):
         pygmt.makecpt(
             cmap="gray",
             series=relief_series,
@@ -220,10 +228,10 @@ with fig.subplot(
     nrows=1,
     ncols=2,
     figsize=("19c", "8c"),
-    autolabel="(a)",
+    autolabel="(a)+jTC",
     sharey="l",
 ):
-    with fig.set_panel(panel=0):
+    with fig.set_panel(panel=0, fixedlabel="(a) Gravity disturbance"):
         # Plot relief
         pygmt.makecpt(
             cmap="gray",
@@ -252,7 +260,7 @@ with fig.subplot(
             frame="afg",
         )
         fig.colorbar(frame='af+l"mGal"')
-    with fig.set_panel(panel=1):
+    with fig.set_panel(panel=1, fixedlabel="(b) Bouguer disturbance"):
         # Plot relief
         pygmt.makecpt(
             cmap="gray",
@@ -300,10 +308,10 @@ with fig.subplot(
     nrows=1,
     ncols=2,
     figsize=("19c", "8c"),
-    autolabel="(a)",
+    autolabel="(a)+jTC",
     sharey="l",
 ):
-    with fig.set_panel(panel=0):
+    with fig.set_panel(panel=0, fixedlabel="(a) Gravity residuals"):
         # Plot relief
         pygmt.makecpt(
             cmap="gray",
@@ -331,7 +339,7 @@ with fig.subplot(
             frame="afg",
         )
         fig.colorbar(frame='af+l"mGal"')
-    with fig.set_panel(panel=1):
+    with fig.set_panel(panel=1, fixedlabel="(b) Gridded gravity residuals"):
         pygmt.makecpt(cmap="polar", series=[-maxabs, maxabs], no_bg=True)
         fig.grdimage(
             residual_grid.gravity_residual,
