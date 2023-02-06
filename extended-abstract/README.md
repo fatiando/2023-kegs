@@ -173,120 +173,92 @@ locally so its codebase ends up being very slim.
 All the gallery examples and user guides of Harmonica and Verde use Ensaio to
 fetch the example datasets.
 
-## Example: processing gravity data
+## Examples
 
-We can process gravity data using some of the Fatiando a Terra libraries, along
-with some other packages from the scientific Python stack like Numpy (Harris et
-al., 2020), Xarray (Hoyer & Hamman, 2017) and Pandas (McKinney, 2010; The
-Pandas Development Team, 2023).
-
-For this example we are going to use an open gravity dataset over the Bushveld
-Igneous Complex in Southern Africa (made available by NOAA NCEI).
-The gravity data and a topography grid for the area are available for download
-through Ensaio.
-We will then use Pandas and Xarray to load the downloaded files into our Python
-script:
+With Ensaio we can easily grab some curated datasets. For example, let's
+download a gravity dataset over Southern Africa (made available by NOAA NCEI):
 
 ```python
 import ensaio
-import pandas as pd
-import xarray as xr
-
-path_gravity = ensaio.fetch_southern_africa_gravity(version=1)
-path_topography = ensaio.fetch_earth_topography(version=1)
-
-data = pd.read_csv(path_gravity)
-topography = xr.load_dataarray(path_topography)
+ensaio.fetch_southern_africa_gravity(version=1)
 ```
 
-The downloaded gravity data consists in values of the observed gravity. The
-first step would be to compute the gravity disturbance by removing the normal
-gravity from the observed data.
-We can use Boule to calculate the normal gravity that the reference ellipsoid
-generates on every observation point (see Fig. 1(a)).
+Figure 1 shows plots of the downloaded gravity data over Southern Africa, and
+a cropped region focusing on the Bushveld Igneous Complex.
+
+![Figure](figs/southern-africa-gravity.png)
+> Figure 1. Gravity data over Southern Africa:
+> (a) observed gravity data and box delimiting the boundaries of a region that
+> contains the Bushveld Igneous Complex, (b) observed data limited to the
+> region around the Bushveld Igneous Complex.
+> Data made available by NOAA NCEI and downloaded using Ensaio.
+
+Using Boule we can define an object that represents the WGS84 reference
+ellipsoid and use it to compute the normal gravity, i.e. the gravity
+acceleration of the reference ellipsoid on every observation point:
 
 ```python
 import boule as bl
-
 ellipsoid = bl.WGS84
-normal_gravity = ellipsoid.normal_gravity(data.latitude, data.height_geometric_m)
-gravity_disturbance = data.gravity_mgal - normal_gravity
+ellipsoid.normal_gravity(data.latitude, data.height)
 ```
 
-The gravity disturbance is mainly governed by the effect of the topographic
-masses. We can remove this effect by forward modelling the topography.
-We will first create a model of the topography using rectangular prisms,
-assigning a density contrast to each one of them:
+By removing the normal gravity from the observed gravity we can obtain the
+gravity disturbance (see Fig. 2a).
+
+![Figure](figs/disturbance-and-bouguer.png)
+> Figure 2.
+> (a) Gravity disturbance over the Bushveld Igneous Complex.
+> (b) Bouguer gravity disturbance obtained after removing the terrain effect
+> from the gravity disturbance.
+
+In order to obtain the Bouguer gravity disturbance we need to remove the
+terrain effect from the gravity disturbance we already computed.
+Harmonica allows us to forward model the gravity effect of the topographic
+masses on every observation point by approximating them with rectangular
+prisms with a specified density (see Fig. 2b):
 
 ```python
 import harmonica as hm
-
-density = np.where(topography_geometric > 0, 2670, 1040-2670)
-topography_model = hm.prism_layer(
-    coordinates=(topography_geometric.easting, topography_geometric.northing),
-    surface=topography_geometric,
+density = np.where(topography > 0, 2670, 1040 - 2670)
+model = hm.prism_layer(
+    coordinates=(topography.easting, topography.northing),
+    surface=topography,
     reference=0,
     properties={"density": density},
 )
+terrain_effect = model.prism_layer.gravity(coordinates, field="g_z")
 ```
 
-And then compute their gravitational effect on the observation points. By
-removing the terrain effect from the disturbance we obtain the Bouguer
-gravity disturbance (see Fig. 1(b)).
-```python
-coordinates = (data.easting_m, data.northing_m, data.height_geometric_m)
-terrain_effect = topography_model.prism_layer.gravity(coordinates, field="g_z")
-gravity_bouguer = gravity_disturbance - terrain_effect
-```
+With the goal of obtaining the gravity effect of the shallower masses we need
+to split the residual field from the regional field.
+We can use Harmonica to generate the regional field using deep equivalent
+sources (see Fig. 3a).
 
-Since the Bouguer disturbance is governed by the effect of deep anomalous
-sources, we are going to separate the residual field from the regional field
-using deep equivalent sources (see Fig. 1(c)).
 ```python
-# Define deep equivalent sources
 deep_sources = hm.EquivalentSources(damping=1000, depth=500e3)
 deep_sources.fit(coordinates, gravity_bouguer)
-
-# Compute regional field
 gravity_regional = deep_sources.predict(coordinates)
 gravity_residual = gravity_bouguer - gravity_residual
-````
-
-Finally, we will create a regular grid of the residual field using shallower
-equivalent sources (see Fig. 1(d)).
-The observed high values correlate with the igneous intrusions present in the
-Bushveld Complex.
-```python
-import pyproj
-
-eq_sources = hm.EquivalentSources(damping=10, depth=10e3)
-eq_sources.fit( coordiantes, gravity_residual)
-
-# Define grid coordinates and grid the data
-grid_coords = vd.grid_coordinates(
-    region=region,   # original region of the data
-    spacing=2 / 60,  # resolution of the grid in decimal degrees
-    extra_coords=2200,  # height in meters
-)
-# And a mercator projection
-projection = pyproj.Proj(proj="merc", lat_ts=data.latitude.mean())
-# Grid the residuals
-residual_grid = eq_sources.grid(
-    coordinates=grid_coords,
-    data_names=["gravity_residual"],
-    dims=("latitude", "longitude"),
-    projection=projection,
-)
 ```
 
-![Figure](figs/figure.png)
-> Figure 1. Fields obtained in different stages of the gravity data processing
-> workflow for the Bushveld Igneous Complex: (a) gravity disturbance on the
-> observation points obtained after removing the normal gravity from the
-> observed gravity; (b) Bouguer gravity disturbance obtained after removing the
-> terrain effect from the disturbance; (c) residual gravity field produced by
-> removing the regional field using deep equivalent sources; (d) grid of the
-> residual gravity field generated with equivalent sources.
+![Figure](figs/residual-and-grid.png)
+> Figure 3.
+> (a) Residual gravity field split using deep equivalent sources.
+> (b) Gridded product of the residual gravity field at a constant height of
+> 2200m above the ellipsoid.
+
+In a similar way, we could use Harmonica's equivalent sources to grid the
+residual field at a constant height (see Fig. 3b):
+
+```python
+eq_sources = hm.EquivalentSources(damping=10, depth=10e3)
+eq_sources.fit(coordinates, gravity_residual)
+grid = eq_sources.grid(
+    upward=2200,
+    spacing=grid_spacing,
+)
+```
 
 The full code for running this example in addition with more detailed
 explanation of the process can be found in https://www.fatiando.org/tutorials.
