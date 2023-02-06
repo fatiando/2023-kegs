@@ -148,6 +148,7 @@ with fig.subplot(
     nrows=1,
     ncols=2,
     figsize=("19c", "10c"),
+    margins=["0.4c", "0.2c"],
     autolabel="(a)+jTC",
 ):
     with fig.set_panel(panel=0, fixedlabel="(a) Observed gravity"):
