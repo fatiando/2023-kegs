@@ -289,9 +289,9 @@ willing to invest time in learning and harnessing for their specific goals.
 The future of the project expects exciting new features: a new magnetic forward
 modelling functions are being developed for Harmonica along with new
 types of equivalent sources and FFT-based transformations.
-The inversion framework for the old `fatiando` library is missing in the new
-tools, but we are looking forward to implement an improved one, focusing on
-performing types of inversions that are missing in other packages of the
+Moreover, we would like to bring back the old inversion framework that the old
+`fatiando` library had, with the opportunity of improving it with modern tools
+and focusing on types of inversions that are missing in other packages of the
 geophysical Python ecosystem.
 
 
