@@ -48,3 +48,25 @@ industry applications, and take a look at some code snippets to showcase its
 capabilities and ease of use.
 We will also take the opportunity to discuss upcoming developments, our roadmap
 for the future and plans for implementing highly requested features.
+
+## About the speaker
+
+Santiago Soler is a Physicist and PhD in Geophysics from Argentina.
+His research have always been around potential fields, working mainly on the
+development of new methodologies for processing and modelling gravity and
+magnetic fields.
+Examples of these are the forward modelling of tesseroids (spherical prisms)
+with variable densities and the gradient-boosted equivalent sources that allow
+to interpolate, grid and upward continue very large datasets of harmonic
+fields.
+In parallel to his research, he's been one of the core developers of the
+Fatiando a Terra project: a collection of open-source Python libraries for
+geosciences.
+His current role as a Postdoctoral Research Fellow at the University of
+British Columbia, under the supervision of Dr. Lindsey Heagy and within the
+Geophysical Inversion Facility group, allows him to research on the
+characterization of the potential of serpentinized rocks for carbon
+sequestration using joint inversions of gravity and magnetic data.
+He still has a strong commitment with the open-source geoscientific ecosystem
+by contributing to the development of Fatiando a Terra and SimPEG, a Python
+framework for geophysical inversions.
