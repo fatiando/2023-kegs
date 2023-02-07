@@ -146,8 +146,8 @@ derivative, upward continuation and reduction to the pole, among others.
 It also offers ways to perform interpolation, gridding and upward continuation
 through the equivalent sources technique.
 Lastly, but not least, it can also read data stored in popular formats like
-`.gdf` files provided by the ICGEM Calculation Service (Barthelmes, 2013) and
-`.grd` files from Oasis Montaj©.
+`.gdf` files provided by the ICGEM Calculation Service and `.grd` files from
+Oasis Montaj©.
 
 ### Pooch
 
@@ -312,12 +312,6 @@ wouldn't exist.
 
 ## References
 
-- Barthelmes, F. (2013). Definition of functionals of the geopotential and
-  their calculation from spherical harmonic models: Theory and formulas used by
-  the calculation service of the International Centre for Global Earth Models
-  (ICGEM); http://icgem.gfz-potsdam.de/ICGEM/ ; revised edition. Scientific
-  Technical Report; 09/02; ISSN 1610-0956.
-  https://doi.org/10.2312/GFZ.B103-0902-26
 - Cockett, R., Kang, S., Heagy, L. J., Pidlisecky, A., & Oldenburg, D. W.
   (2015). SimPEG: An open source framework for simulation and gradient based
   parameter estimation in geophysical applications. Computers & Geosciences,
