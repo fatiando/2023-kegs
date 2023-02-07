@@ -10,7 +10,7 @@
 
 <!-- brief description of what the talk will be about -->
 
-During this talk we will present the Fatiando a Terra project, a collection of
+In this talk we will present the Fatiando a Terra project, a collection of
 open-source Python libraries designed for geophysical applications.
 We will describe how the project started as a simple library part of a PhD
 Thesis in South America, how it created a community around it that actively
@@ -42,8 +42,8 @@ software for geosciences happened as early as the 70s and 80s.
 Projects like Seismic Unix (Stockwell, 1999) and GMT (Wessel et al., 2019) are
 pioneer examples.
 
-Fast-forwarding to this millennia, the popularity that the Python language
-developed among every scientific field planted the seed for an ever-growing
+Fast-forwarding to this millennia, the popularity of the Python language
+among every scientific field planted the seed for an ever-growing
 open-source geoscientific ecosystem.
 Python tools aimed to solve geoscientific problems proliferated, specially
 since the beginnings of the second decade of the century.
@@ -55,9 +55,9 @@ It started in 2010 in South America as a simple Python library as part of the
 PhD Thesis of Leonardo Uieda, but due to its open-source license and good
 online documentation it started being used by researchers and industry
 consultants from different regions of the world.
-As more people started to use it, some of them became contributors
-by writing new features, fixing bugs, adding more test or improving the
-documentation.
+As more people started using it, some of them became contributors
+by writing new features, fixing bugs, adding more test, improving the
+documentation or having an active participation in its community.
 The open-source nature of the project allowed it to grow under
 a community-driven development.
 
@@ -69,8 +69,7 @@ They offer software solutions for downloading and caching data from the web,
 handling and interpolating spatial data, computing normal gravity of reference
 ellipsoids through analytic solutions, processing potential fields data through
 frequency-domain filters, forward modelling gravity and magnetic fields of
-different simple geometrical bodies and grid harmonic data with equivalent
-sources.
+different geometrical bodies and grid harmonic data with equivalent sources.
 
 During this talk we'll provide an overview of the tools available in the
 project and demonstrate their functionalities using examples from research and
@@ -140,7 +139,7 @@ Harmonica offers functions and classes for processing and modelling gravity and
 magnetic data.
 It hosts functions for forward modelling the gravity fields of point sources,
 rectangular prisms and also tesseroids (a.k.a spherical prisms).
-It can perform gravity corrections from a simple Bouguer to a full terrain
+It can perform gravity corrections: from a simple Bouguer up to a full terrain
 correction through forward modelling digital elevation models with prisms.
 Regular grids can be transformed using FFT-based filters like upward
 derivative, upward continuation and reduction to the pole, among others.
@@ -158,10 +157,10 @@ Originally designed for scientific applications and to be used by other
 software packages, Pooch can download data from the web through a large range
 of protocols, cache it locally at a desired location and also check the
 integrity of those files.
-This thin library is currently being used by other projects in the scientific
-Python stack, like SciPy (Virtanen et al., 2020), scikit-image (van der Walt et
-al., 2014), MetPy (May et al., 2016) and icepack (Shapero et al., 2020), among
-others.
+This simple but powerful library is currently being used by other projects in
+the scientific Python stack, like SciPy (Virtanen et al., 2020), scikit-image
+(van der Walt et al., 2014), MetPy (May et al., 2016) and icepack (Shapero et
+al., 2020), among others.
 
 ### Ensaio
 
@@ -175,7 +174,7 @@ fetch the example datasets.
 
 ## Examples
 
-With Ensaio we can easily grab some curated datasets. For example, let's
+We can use Ensaio to easily fetch some curated datasets. For example, let's
 download a gravity dataset over Southern Africa (made available by NOAA NCEI):
 
 ```python
@@ -183,8 +182,8 @@ import ensaio
 ensaio.fetch_southern_africa_gravity(version=1)
 ```
 
-Figure 1 shows plots of the downloaded gravity data over Southern Africa, and
-a cropped region focusing on the Bushveld Igneous Complex.
+Figure 1 shows plots of the downloaded gravity data over Southern Africa (Fig.
+1a), and a cropped region focusing on the Bushveld Igneous Complex (Fig. 1b).
 
 ![Figure](figs/southern-africa-gravity.png)
 > Figure 1. Gravity data over Southern Africa:
@@ -214,9 +213,9 @@ gravity disturbance (see Fig. 2a).
 
 In order to obtain the Bouguer gravity disturbance we need to remove the
 terrain effect from the gravity disturbance we already computed.
-Harmonica allows us to forward model the gravity effect of the topographic
+Harmonica allows us to compute the gravity effect of the topographic
 masses on every observation point by approximating them with rectangular
-prisms with a specified density (see Fig. 2b):
+prisms with a specified density and forward modelling them (see Fig. 2b):
 
 ```python
 import harmonica as hm
@@ -260,8 +259,10 @@ grid = eq_sources.grid(
 )
 ```
 
-The full code for running this example in addition with more detailed
-explanation of the process can be found in https://www.fatiando.org/tutorials.
+These small examples showcase how the tools available in the forementioned
+libraries can be used together to process gravity data.
+The full code for running this example, in addition with more detailed
+explanation of the process, can be found in https://www.fatiando.org/tutorials.
 Figures were produced using pyGMT (Uieda, 2022).
 
 
@@ -282,20 +283,20 @@ also to the whole ecosystem: by providing tools that other projects can depend
 on and by setting an example of how to develop and maintain open-source
 geoscientific tools.
 
-Fatiando has been used by students as researchers as core parts of their Thesis
-and scientific articles, but also by the industry.
+Fatiando has been used by students and researchers as core parts of their
+Thesis and scientific articles, but also by the industry.
 This highlights the importance of nursing open-source tools that people are
-willing to invest time in learning and harnessing for their specific goals.
+willing to invest time in learning and harnessing for their particular goals.
 
 The future of the project expects exciting new features: a new magnetic forward
 modelling functions are being developed for Harmonica along with new
 types of equivalent sources and FFT-based transformations.
-Moreover, we would like to bring back the old inversion framework that the old
+Moreover, we would like to bring back the inversion framework that the old
 `fatiando` library had, with the opportunity of improving it with modern tools
 and focusing on types of inversions that are missing in other packages of the
 geophysical Python ecosystem.
 
-Lastly, we would like to invite everyone to join the community, to try out our
+Lastly, we would like to invite everyone to join the community: to try out our
 tools, to bring new use cases and ideas for new features that we can include in
 our project, and we specially welcome new contributions.
 Get involved by visiting https://www.fatiando.org/contact.
