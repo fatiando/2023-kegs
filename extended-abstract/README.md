@@ -238,7 +238,7 @@ sources (see Fig. 3a).
 deep_sources = hm.EquivalentSources(damping=1000, depth=500e3)
 deep_sources.fit(coordinates, gravity_bouguer)
 gravity_regional = deep_sources.predict(coordinates)
-gravity_residual = gravity_bouguer - gravity_residual
+gravity_residual = gravity_bouguer - gravity_regional
 ```
 
 ![Figure](figs/residual-and-grid.png)
