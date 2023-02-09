@@ -286,9 +286,12 @@ Figures were produced using pyGMT (Uieda, 2022).
 <!-- Who are using fatiando and their achievements. -->
 <!-- Future goals? -->
 
-After more than a decade since them Fatiando a Terra project was born, the
-project lives thanks to a network of collaborators and users that actively
-participate in its development.
+After more than a decade since the Fatiando a Terra project was started, the
+project continues to grow thanks to a network of collaborators and users that
+actively participate in its development.
+The success of the project has been enabled by having the code be
+openly-licensed and by promoting a community-driven model of software
+development.
 It keeps proving that a collaborative and community-driven software development
 for science and industry is possible under an open-source environment.
 Its development turns out to be useful not only for their direct users, but
