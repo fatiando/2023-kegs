@@ -112,7 +112,7 @@ As a side effect, anyone interested in changing the code of one of our
 libraries now needs to familiarize themselves with a smaller code base, making
 it easier for new contributors to collaborate to the project.
 
-By that time the geoscientific Python ecosystem had already seen a major
+In parallel, the broader geoscientific Python ecosystem has seen a major
 growth.
 Libraries like SimPEG (Cockett et al., 2015), GemPy (de la Varga et al., 2019),
 pyGIMLi (Rücker et al., 2017) and ObsPy (Obspy, 2019) were already established
