@@ -101,7 +101,7 @@ Further, the code contained in this library varied greatly in
 scope and maturity, ranging from toy problems meant to be used for educational
 purposes to production ready tools.
 
-In 2018 the project decided to redesign its code base by splitting the old
+In 2018 the community decided to redesign the code base by splitting the old
 `fatiando` library into several smaller libraries, each one with a very
 specific scope.
 This simplifies both the adoption of the libraries and also their development.
