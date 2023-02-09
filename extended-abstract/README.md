@@ -60,7 +60,7 @@ documentation or having an active participation in its community.
 The open-source nature of the project allowed it to grow under
 a community-driven development.
 
-The main goal of the project is to to provide open-source software tools that
+The main goal of the project is to provide open-source software tools that
 are easy to use and also well designed, tested and documented.
 Nowadays it consists in a set of Python libraries for geosciences, each one of
 them with a very specific scope of application.
