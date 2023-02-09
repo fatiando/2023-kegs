@@ -96,7 +96,7 @@ In its origins, Fatiando a Terra consisted of a single Python library named
 that the project offered.
 After years of development, this design approach proved to be flawed.
 The large size of the code base made it difficult to maintain and to extend its
-functionality. 
+functionality.
 Further, the code contained in this library varied greatly in
 scope and maturity, ranging from toy problems meant to be used for educational
 purposes to production ready tools.
@@ -109,8 +109,8 @@ Most users look for only a subset of the tools offered by the project, and
 having them divided in libraries reduces the size of the libraries they depend
 on.
 As a side effect, anyone interested in changing the code of one of our
-libraries now needs to familiarize with a smaller code base, making it easier
-for the community to contribute to the project.
+libraries now needs to familiarize themselves with a smaller code base, making
+it easier for new contributors to collaborate to the project.
 
 By that time the geoscientific Python ecosystem had already seen a major
 growth.
