@@ -91,7 +91,7 @@ industry applications.
 
 ## The Project
 
-In its origins, Fatiando a Terra consisted in a single Python library named
+In its origins, Fatiando a Terra consisted of a single Python library named
 `fatiando` (https://legacy.fatiando.org) that used to host all the features
 that the project offered.
 After years of development this designed was proved to be flawed: its code base
