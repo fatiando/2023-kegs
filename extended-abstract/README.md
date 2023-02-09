@@ -40,11 +40,12 @@ open-source software for geosciences happened as early as the 70s and 80s.
 Projects like Seismic Unix (Stockwell, 1999) and GMT (Wessel et al., 2019) are
 pioneer examples.
 
-Fast-forwarding to this millennia, the popularity of the Python language
-among every scientific field planted the seed for an ever-growing
-open-source geoscientific ecosystem.
-Python tools aimed to solve geoscientific problems proliferated, specially
-since the beginnings of the second decade of the century.
+In recent decades, the popularity of the Python language amongst every
+scientific field planted the seeds for an ever-growing open-source
+geoscientific ecosystem.
+Python tools aimed at solving geoscientific problems have proliferated, and
+there are now open-source tools that span geologic modelling, data processing,
+inversion, visualization, and much more.
 
 In this scenario Fatiando a Terra (Uieda et al., 2013;
 https://www.fatiando.org) was born: a project for developing open-source Python
