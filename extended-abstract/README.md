@@ -152,7 +152,7 @@ analytic solution (Li and Götze, 2001).
 Harmonica offers functions and classes for processing and modelling gravity and
 magnetic data.
 It hosts functions for forward modelling the gravity fields of point sources,
-rectangular prisms and also tesseroids (a.k.a spherical prisms).
+rectangular prisms and also tesseroids (a.k.a. spherical prisms).
 It can perform gravity corrections: from a simple Bouguer up to a full terrain
 correction through forward modelling digital elevation models with prisms.
 Regular grids can be transformed using FFT-based filters like upward
