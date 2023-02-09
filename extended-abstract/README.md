@@ -185,7 +185,7 @@ its codebase ends up being very slim.
 All the gallery examples and user guides of Harmonica and Verde use Ensaio to
 fetch the example datasets.
 
-## Examples
+## Example: Gravity data over South Africa
 
 We can use Ensaio to easily fetch some curated datasets. For example, let's
 download a gravity dataset over Southern Africa (made available by NOAA NCEI):
