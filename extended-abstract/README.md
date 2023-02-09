@@ -18,8 +18,8 @@ it created a community around it that actively collaborates to its development
 and its current state.
 We will introduce the tools available in the project and show examples with
 field data of how they can be used to solve geophysical problems.
-Finally we will discuss some of the current challenges and mention the upcoming
-features and development plans for the future.
+Finally, we will discuss some of the current challenges and mention the
+upcoming features and development plans for the future.
 
 
 ## Introduction
@@ -34,7 +34,7 @@ geophysics.
 Software developed by researchers and industry professionals enable us to
 process large amount of data, generate visualizations for interpretation, and
 ultimately to perform inversions to build models of the subsurface.
-All of which are key to improve decision making processes.
+All of which are key to improve decision-making processes.
 Although much of this software was built as in-house tools, the appearance of
 open-source software for geosciences happened as early as the 70s and 80s.
 Projects like Seismic Unix (Stockwell, 1999) and GMT (Wessel et al., 2019) are
@@ -63,8 +63,8 @@ using a community-driven model.
 
 The main goal of the project is to provide open-source software tools that
 are easy to use and also well designed, tested, and documented.
-Nowadays it consists in a set of Python libraries, each one of them with a very
-specific scope of application.
+Nowadays, it consists in a set of Python libraries, each one of them with
+a very specific scope of application.
 These libraries offer software solutions for downloading and caching data from the web,
 handling and interpolating spatial data, computing normal gravity of reference
 ellipsoids using analytic solutions, processing potential fields data with
@@ -143,7 +143,7 @@ rectangular prisms and also tesseroids (a.k.a. spherical prisms).
 It can perform gravity corrections, from a simple Bouguer correction to a full
 terrain correction, by forward modelling digital elevation models with prisms.
 Regular grids can be transformed using FFT-based filters including upward
-derivative, upward continuation, and reduction to the pole, among others.
+derivative, upward continuation, and reduction to the pole, amongst others.
 It also offers ways to perform interpolation, gridding, and upward continuation
 through the equivalent sources technique.
 Finally, it can also read data stored in popular formats like `.gdf` files
@@ -160,14 +160,14 @@ integrity of those files.
 This simple but powerful library is currently being used by other projects in
 the scientific Python stack, like SciPy (Virtanen et al., 2020), scikit-image
 (van der Walt et al., 2014), MetPy (May et al., 2016) and icepack (Shapero et
-al., 2020), among others.
+al., 2020), amongst others.
 
 ### Ensaio
 
 Lastly, we introduce Ensaio, a small library that hosts open licensed datasets
 that are useful for running examples and tutorials, for teaching, and for
 probing our codes.
-It uses Pooch under the hood to download and cache those datasets locally so
+It uses Pooch under the hood to download and cache those datasets locally, so
 its codebase ends up being very slim.
 
 ## Example: Gravity data over South Africa
@@ -245,7 +245,7 @@ gravity_residual = gravity_bouguer - gravity_regional
 > (b) Gridded product of the residual gravity field at a constant height of
 > 2200m above the ellipsoid.
 
-In a similar way, we can use Harmonica's equivalent sources to grid the
+Similarly, we can use Harmonica's equivalent sources to grid the
 residual field at a constant height (see Fig. 3b):
 
 ```python
