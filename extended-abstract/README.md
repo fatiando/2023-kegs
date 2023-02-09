@@ -274,7 +274,7 @@ grid = eq_sources.grid(
 
 This example showcases how the tools available in the aforementioned
 libraries can be used together to process gravity data.
-The full code for running this example, along with a more detailed
+The full code for running this example, along with a detailed
 explanation of the steps, can be found in https://www.fatiando.org/tutorials.
 Figures were produced using pyGMT (Uieda, 2022).
 
