@@ -56,7 +56,7 @@ Being available under an open-source license and its clear and comprehensive
 documentation have facilitated its use by researchers and industry
 professionals from different regions of the world.
 Some of these users have since become contributors by writing new features,
-fixing bugs, adding more test, improving the documentation or having an active
+fixing bugs, adding more tests, improving the documentation or having an active
 participation in its community.
 Now, the Fatiando project has over 30 contributors, and it continues to grow
 using a community-driven model.
