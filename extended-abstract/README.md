@@ -12,8 +12,8 @@
 
 In this talk we will present the Fatiando a Terra project, a collection of
 open-source Python libraries designed for geophysical applications.
-We will describe how the project started as a simple library part of a PhD
-Thesis in South America, how it created a community around it that actively
+We will describe how the project has grown from its start as a simple library part of a PhD
+Thesis in South America to a production-quality codebase, and how it created a community around it that actively
 collaborates to its development and its current state.
 We will introduce the tools available in the project and show real world
 examples of how they can be used to solve geophysical problems.
