@@ -51,7 +51,7 @@ for the future and plans for implementing highly requested features.
 
 ## About the speaker
 
-Santiago Soler is an Argentinean Physicist and PhD in Geophysics.
+Santiago Soler is an Argentinian Physicist and PhD in Geophysics.
 His research is centered on the application of potential fields to geophysical
 problems, and mainly focused on the development of new methodologies for
 processing and modelling gravity and magnetic fields.
