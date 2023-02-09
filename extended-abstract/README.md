@@ -80,7 +80,7 @@ Nowadays it consists in a set of Python libraries for geosciences, each one of
 them with a very specific scope of application.
 These libraries offer software solutions for downloading and caching data from the web,
 handling and interpolating spatial data, computing normal gravity of reference
-ellipsoids through analytic solutions, processing potential fields data through
+ellipsoids using analytic solutions, processing potential fields data with
 frequency-domain filters, forward modelling gravity and magnetic fields of
 different geometrical bodies and grid harmonic data with equivalent sources.
 
