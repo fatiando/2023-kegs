@@ -27,19 +27,16 @@ features and development plans for the future.
 <!-- something about geosciences and open source, the history and the need to
 develop os tool for a more collaborative and reproducible science -->
 
-The relationship between geophysical research and computational solutions dates
-back to the very origins of silicon-based computers.
-Scientists and industry saw in computational power a mean to solve new
-challenging problems within geosciences and exploration.
-They offer the possibility to process large amount of data, generate
-visualizations for interpretation and ultimately to perform inversions to build
-models of the subsurface. All of which are key to improve decision making
-processes.
-
-Companies and researchers started developing their own software to perform
-these types of tasks.
-Although most of them built in-house tools, the appearance of open-source
-software for geosciences happened as early as the 70s and 80s.
+Advancements in computing, from the origins of silicon-based chips, the
+development of numerical solvers and the advent of multiprocessing have each
+enabled new opportunities to solve larger and more complex problems in
+geophysics.
+Software developed by researchers and industry professionals enable us to
+process large amount of data, generate visualizations for interpretation, and
+ultimately to perform inversions to build models of the subsurface.
+All of which are key to improve decision making processes.
+Although much of this software was built as in-house tools, the appearance of
+open-source software for geosciences happened as early as the 70s and 80s.
 Projects like Seismic Unix (Stockwell, 1999) and GMT (Wessel et al., 2019) are
 pioneer examples.
 
