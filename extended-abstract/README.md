@@ -135,7 +135,7 @@ interface reassembles one of the popular machine learning Python packages,
 Scikit-learn (Pedregosa et al., 2011).
 Additionally, it offers analysis tools that accompany the interpolators, such
 as trend removal, windowing operations, cross-validation, k-folding,
-grid projection and more coordinates manipulation utilities.
+grid projection, and more coordinate manipulation utilities.
 
 ### Boule
 
