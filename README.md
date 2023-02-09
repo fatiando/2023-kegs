@@ -52,12 +52,13 @@ for the future and plans for implementing highly requested features.
 ## About the speaker
 
 Santiago Soler is an Argentinean Physicist and PhD in Geophysics.
-His research is mainly around potential fields, focused on the development of
-new methodologies for processing and modelling gravity and magnetic fields.
+His research is centered on the application of potential fields to geophysical
+problems, and mainly focused on the development of new methodologies for
+processing and modelling gravity and magnetic fields.
 Examples of these are the forward modelling of tesseroids (spherical prisms)
-with variable density, and the gradient-boosted equivalent sources, that allow
-to interpolate, grid and upward continue very large datasets of harmonic
-fields.
+with variable density, and the gradient-boosted equivalent sources technique,
+that allows interpolating gridding and upward continuing very large datasets of
+gravity and magnetic fields.
 In parallel to his research, he is committed to contribute to open-source
 scientific software and open science initiatives.
 He is one of the core developers of the Fatiando a Terra project: a collection
