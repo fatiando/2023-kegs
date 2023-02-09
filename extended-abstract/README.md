@@ -94,11 +94,12 @@ industry applications.
 In its origins, Fatiando a Terra consisted in a single Python library named
 `fatiando` (https://legacy.fatiando.org) that used to host all the features
 that the project offered.
-After years of development this designed was proved to be flawed: its code base
-grew too large for a single library, making it hard to maintain and extend its
-functionalities. Moreover, it hosted a wide variety of functionalities: from
-production ready tools up to toy problems meant to be used for educational
-purposes.
+After years of development, this design approach proved to be flawed.
+The large size of the code base made it difficult to maintain and to extend its
+functionality. 
+Further, the code contained in this library varied greatly in
+scope and maturity, ranging from toy problems meant to be used for educational
+purposes to production ready tools.
 
 In 2018 the project decided to redesign its code base by splitting the old
 `fatiando` library into several smaller libraries, each one with a very
