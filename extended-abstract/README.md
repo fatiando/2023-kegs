@@ -169,8 +169,6 @@ that are useful for running examples and tutorials, for teaching, and for
 probing our codes.
 It uses Pooch under the hood to download and cache those datasets locally so
 its codebase ends up being very slim.
-All the gallery examples and user guides of Harmonica and Verde use Ensaio to
-fetch the example datasets.
 
 ## Example: Gravity data over South Africa
 
