@@ -82,7 +82,7 @@ These libraries offer software solutions for downloading and caching data from t
 handling and interpolating spatial data, computing normal gravity of reference
 ellipsoids using analytic solutions, processing potential fields data with
 frequency-domain filters, forward modelling gravity and magnetic fields of
-different geometrical bodies and grid harmonic data with equivalent sources.
+different geometrical bodies, and gridding harmonic data with equivalent sources.
 
 During this talk we'll provide an overview of the tools available in the
 project and demonstrate their functionalities using examples from research and
