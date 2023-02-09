@@ -129,7 +129,7 @@ Pooch and Ensaio.
 
 ### Verde
 
-Verde hosts tools for spatial data processing, interpolation and gridding.
+Verde hosts tools for spatial data processing, interpolation, and gridding.
 Its core interpolation methods are inspired by machine learning, hence its
 interface reassembles the one of the popular Scikit-learn (Pedregosa et al.,
 2011). Besides, it offers analysis tools that accompany the interpolators, like
