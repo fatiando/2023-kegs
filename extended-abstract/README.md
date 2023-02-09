@@ -292,12 +292,12 @@ actively participate in its development.
 The success of the project has been enabled by having the code be
 openly-licensed and by promoting a community-driven model of software
 development.
-It keeps proving that a collaborative and community-driven software development
-for science and industry is possible under an open-source environment.
-Its development turns out to be useful not only for their direct users, but
-also to the whole ecosystem: by providing tools that other projects can depend
-on and by setting an example of how to develop and maintain open-source
-geoscientific tools.
+In addition to serving direct users, the benefits of the project extend more
+broadly as Fatiando libraries are relied upon by other projects in the
+scientific Python ecosystem.
+Furthermore, we have contributed to the advancement and adoption of
+best-practices in open-source software development within this broader
+community.
 
 Fatiando has been used by students and researchers as core parts of their
 Thesis and scientific articles, but also by the industry.
