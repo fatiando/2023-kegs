@@ -27,7 +27,7 @@ features and development plans for the future.
 <!-- something about geosciences and open source, the history and the need to
 develop os tool for a more collaborative and reproducible science -->
 
-The relation between geophysical research and computational solutions dates
+The relationship between geophysical research and computational solutions dates
 back to the very origins of silicon-based computers.
 Scientists and industry saw in computational power a mean to solve new
 challenging problems within geosciences and exploration.
