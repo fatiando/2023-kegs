@@ -242,8 +242,8 @@ model = hm.prism_layer(
 terrain_effect = model.prism_layer.gravity(coordinates, field="g_z")
 ```
 
-With the goal of obtaining the gravity effect of the shallower masses we need
-to split the residual field from the regional field.
+To achieve the goal of obtaining the gravity effect of the shallower masses we
+need to split the residual field from the regional field.
 We can use Harmonica to generate the regional field using deep equivalent
 sources (see Fig. 3a).
 
@@ -260,7 +260,7 @@ gravity_residual = gravity_bouguer - gravity_regional
 > (b) Gridded product of the residual gravity field at a constant height of
 > 2200m above the ellipsoid.
 
-In a similar way, we could use Harmonica's equivalent sources to grid the
+In a similar way, we can use Harmonica's equivalent sources to grid the
 residual field at a constant height (see Fig. 3b):
 
 ```python
@@ -272,10 +272,10 @@ grid = eq_sources.grid(
 )
 ```
 
-These small examples showcase how the tools available in the forementioned
+This example showcases how the tools available in the aforementioned
 libraries can be used together to process gravity data.
-The full code for running this example, in addition with more detailed
-explanation of the process, can be found in https://www.fatiando.org/tutorials.
+The full code for running this example, along with a more detailed
+explanation of the steps, can be found in https://www.fatiando.org/tutorials.
 Figures were produced using pyGMT (Uieda, 2022).
 
 
