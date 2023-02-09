@@ -324,7 +324,7 @@ Get involved by visiting https://www.fatiando.org/contact.
 
 We are indebted to the developers and maintainers of all the open-source
 software and particularly to the users and contributors of Fatiando a Terra.
-Without their gratitude, effort and contributions this project
+Without their gratitude, effort, and contributions this project
 wouldn't exist.
 
 
