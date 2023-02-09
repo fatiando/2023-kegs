@@ -300,9 +300,10 @@ best-practices in open-source software development within this broader
 community.
 
 Fatiando has been used by students and researchers as core parts of their
-Thesis and scientific articles, but also by the industry.
-This highlights the importance of nursing open-source tools that people are
-willing to invest time in learning and harnessing for their particular goals.
+Thesis and scientific articles, and also by industry.
+The growing reliance on open-source tools by researchers and professionals
+highlights the importance of continued maintenance and development of these
+tools.
 
 The future of the project expects exciting new features: a new magnetic forward
 modelling functions are being developed for Harmonica along with new
