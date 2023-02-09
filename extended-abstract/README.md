@@ -153,15 +153,14 @@ Harmonica offers functions and classes for processing and modelling gravity and
 magnetic data.
 It hosts functions for forward modelling the gravity fields of point sources,
 rectangular prisms and also tesseroids (a.k.a. spherical prisms).
-It can perform gravity corrections: from a simple Bouguer up to a full terrain
-correction through forward modelling digital elevation models with prisms.
-Regular grids can be transformed using FFT-based filters like upward
-derivative, upward continuation and reduction to the pole, among others.
-It also offers ways to perform interpolation, gridding and upward continuation
+It can perform gravity corrections, from a simple Bouguer correction to a full
+terrain correction, by forward modelling digital elevation models with prisms.
+Regular grids can be transformed using FFT-based filters including upward
+derivative, upward continuation, and reduction to the pole, among others.
+It also offers ways to perform interpolation, gridding, and upward continuation
 through the equivalent sources technique.
-Lastly, but not least, it can also read data stored in popular formats like
-`.gdf` files provided by the ICGEM Calculation Service and `.grd` files from
-Oasis Montaj©.
+Finally, it can also read data stored in popular formats like `.gdf` files
+provided by the ICGEM Calculation Service and `.grd` files from Oasis Montaj©.
 
 ### Pooch
 
