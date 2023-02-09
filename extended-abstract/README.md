@@ -131,9 +131,10 @@ Pooch and Ensaio.
 
 Verde hosts tools for spatial data processing, interpolation, and gridding.
 Its core interpolation methods are inspired by machine learning, hence its
-interface reassembles the one of the popular Scikit-learn (Pedregosa et al.,
-2011). Besides, it offers analysis tools that accompany the interpolators, like
-trend removal, blocked or windowed operations, cross-validation, k-folding,
+interface reassembles one of the popular machine learning Python packages,
+Scikit-learn (Pedregosa et al., 2011).
+Additionally, it offers analysis tools that accompany the interpolators, such
+as trend removal, windowing operations, cross-validation, k-folding,
 grid projection and more coordinates manipulation utilities.
 
 ### Boule
