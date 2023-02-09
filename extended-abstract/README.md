@@ -177,11 +177,11 @@ al., 2020), among others.
 
 ### Ensaio
 
-Lastly we introduce Ensaio, a small library that hosts open licensed datasets
-that are useful for running examples and tutorials, for teaching and for
+Lastly, we introduce Ensaio, a small library that hosts open licensed datasets
+that are useful for running examples and tutorials, for teaching, and for
 probing our codes.
-It actually uses Pooch under the hood to download and cache those datasets
-locally so its codebase ends up being very slim.
+It uses Pooch under the hood to download and cache those datasets locally so
+its codebase ends up being very slim.
 All the gallery examples and user guides of Harmonica and Verde use Ensaio to
 fetch the example datasets.
 
