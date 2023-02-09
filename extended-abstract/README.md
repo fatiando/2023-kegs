@@ -305,10 +305,11 @@ The growing reliance on open-source tools by researchers and professionals
 highlights the importance of continued maintenance and development of these
 tools.
 
-The future of the project expects exciting new features: a new magnetic forward
-modelling functions are being developed for Harmonica along with new
-types of equivalent sources and FFT-based transformations.
-Moreover, we would like to bring back the inversion framework that the old
+Plans for future development include the implementation of more efficient
+forward modelling functions for Harmonica as well as the expansion of
+functionality for equivalent source calculations and FFT-based
+transformations.
+Moreover, we plan to bring back the inversion framework that the old
 `fatiando` library had, with the opportunity of improving it with modern tools
 and focusing on types of inversions that are missing in other packages of the
 geophysical Python ecosystem.
