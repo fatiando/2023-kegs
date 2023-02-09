@@ -60,6 +60,20 @@ documentation or having an active participation in its community.
 The open-source nature of the project allowed it to grow under
 a community-driven development.
 
+In this setting, Leonardo Uieda created the Fatiando a Terra project (Uieda et
+al., 2013; https://www.fatiando.org) aimed at developing open-source Python
+tools for geophysics.
+It started in 2010 as a single Python library as part of his PhD Thesis in
+South America.
+Being available under an open-source license and its clear and comprehensive
+documentation have facilitated its use by researchers and industry
+professionals from different regions of the world.
+Some of these users have since become contributors by writing new features,
+fixing bugs, adding more test, improving the documentation or having an active
+participation in its community.
+Now, the Fatiando project has over 30 contributors, and it continues to grow
+using a community-driven model.
+
 The main goal of the project is to to provide open-source software tools that
 are easy to use and also well designed, tested and documented.
 Nowadays it consists in a set of Python libraries for geosciences, each one of
