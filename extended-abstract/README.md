@@ -314,10 +314,10 @@ Moreover, we plan to bring back the inversion framework that the old
 and focusing on types of inversions that are missing in other packages of the
 geophysical Python ecosystem.
 
-Lastly, we would like to invite everyone to join the community: to try out our
-tools, to bring new use cases and ideas for new features that we can include in
-our project, and we specially welcome new contributions.
-Get involved by visiting https://www.fatiando.org/contact.
+We invite everyone to try out our tools, suggest new features, bring new use
+cases and especially make contributions to the code and documentation.
+The Fatiando website (https://www.fatiando.org/contact) has resources for
+getting involved.
 
 
 ## Acknowledgements
