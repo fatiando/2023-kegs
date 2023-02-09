@@ -47,19 +47,6 @@ Python tools aimed at solving geoscientific problems have proliferated, and
 there are now open-source tools that span geologic modelling, data processing,
 inversion, visualization, and much more.
 
-In this scenario Fatiando a Terra (Uieda et al., 2013;
-https://www.fatiando.org) was born: a project for developing open-source Python
-tools for geophysics.
-It started in 2010 in South America as a simple Python library as part of the
-PhD Thesis of Leonardo Uieda, but due to its open-source license and good
-online documentation it started being used by researchers and industry
-consultants from different regions of the world.
-As more people started using it, some of them became contributors
-by writing new features, fixing bugs, adding more test, improving the
-documentation or having an active participation in its community.
-The open-source nature of the project allowed it to grow under
-a community-driven development.
-
 In this setting, Leonardo Uieda created the Fatiando a Terra project (Uieda et
 al., 2013; https://www.fatiando.org) aimed at developing open-source Python
 tools for geophysics.
