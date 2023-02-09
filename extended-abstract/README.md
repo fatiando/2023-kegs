@@ -118,12 +118,11 @@ Libraries like SimPEG (Cockett et al., 2015), GemPy (de la Varga et al., 2019),
 pyGIMLi (Rücker et al., 2017) and ObsPy (Obspy, 2019) were established.
 These projects provide scientists and industry with a wide range of tools for
 research and exploration.
-The project decided to invest on extending this growing geoscientific
-ecosystem, rather than reinventing features already developed by other
-packages.
-The introduction of smaller and narrow scoped libraries allowed other projects
-to use on them, avoiding having a single large dependency for only a portion of
-its features.
+As a project, we decided to invest in the strengths of the Fatiando libraries
+in light of the broader ecosystem.
+The introduction of smaller, and narrowly scoped libraries has again been
+advantageous as it allows other projects to use them without introducing
+a large set of unnecessary dependencies.
 
 The project is currently formed by five libraries: Verde, Boule, Harmonica,
 Pooch and Ensaio.
