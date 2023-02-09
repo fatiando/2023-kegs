@@ -164,11 +164,11 @@ provided by the ICGEM Calculation Service and `.grd` files from Oasis Montaj©.
 
 ### Pooch
 
-The most general purpose library in the project is Pooch, which offers an easy
-to use interface for downloading and caching data from the web.
+The most general purpose library in the project is Pooch, which offers an
+easy-to-use interface for downloading and caching data from the web.
 Originally designed for scientific applications and to be used by other
 software packages, Pooch can download data from the web through a large range
-of protocols, cache it locally at a desired location and also check the
+of protocols, cache it locally at a desired location, and also check the
 integrity of those files.
 This simple but powerful library is currently being used by other projects in
 the scientific Python stack, like SciPy (Virtanen et al., 2020), scikit-image
