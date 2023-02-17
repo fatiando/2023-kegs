@@ -14,9 +14,11 @@ dependencies:
   - pyvista==0.38.1
   - jupyter
   - tectonic
+  - pip
   # Fatiando packages
   - pooch==1.6.0
   - boule==0.4.1
   - ensaio==0.5.0
-  - harmonica==0.5.1
   - verde==1.7.0
+  - pip:
+      - git+https://github.com/fatiando/harmonica
