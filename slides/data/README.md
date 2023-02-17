@@ -1,9 +1,9 @@
 # About the data
 
-The `erie_tf_rtf_122.GRD` data file was downloaded from NRCAN website and it's
-available under the [Open Government Licence, Canada](
-    https://open.canada.ca/en/open-government-licence-canada
-).
+The `snowlake_tf_196.GRD`, `snowlake_tf_196.GRD.gi` and
+`snowlake_tf_196.GRD.xml` data files were downloaded from NRCAN website and
+it's available under the [Open Government Licence, Canada](
+https://open.canada.ca/en/open-government-licence-canada).
 
 ## References
 
