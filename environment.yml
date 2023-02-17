@@ -22,3 +22,4 @@ dependencies:
   - verde==1.7.0
   - pip:
       - git+https://github.com/fatiando/harmonica
+      - ppigrf
