@@ -1,8 +1,8 @@
 # About the data
 
-The `snowlake_tf_196.GRD`, `snowlake_tf_196.GRD.gi` and
-`snowlake_tf_196.GRD.xml` data files were downloaded from NRCAN website and
-it's available under the [Open Government Licence, Canada](
+The `Mount Milligan_MTF.GRD`, `Mount Milligan_MTF.GRD.gi` and `Mount
+Milligan_MTF.GRD.xml` data files were downloaded from NRCAN website and it's
+available under the [Open Government Licence, Canada](
 https://open.canada.ca/en/open-government-licence-canada).
 
 ## References
