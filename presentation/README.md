@@ -9,6 +9,7 @@ Impress](https://www.libreoffice.org/discover/impress/) using the
 [Montserrat](https://fonts.google.com/specimen/Montserrat)
 and [FiraCode](https://github.com/tonsky/FiraCode) fonts available under the
 OFL license.
+Versions of these fonts are included in the `fonts` directory.
 
 The `code` folder contains Jupyter notebooks and Python scripts used to
 generate some of the figures shown in the slides.
@@ -19,3 +20,5 @@ British Columbia. The files were downloaded from
 [Open Government Licence, Canada](
 https://open.canada.ca/en/open-government-licence-canada).
 
+The `figs` folder contains some of the figures and original `.svg` files used
+to create the figures shown in the slides.
