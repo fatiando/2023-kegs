@@ -9,3 +9,13 @@ Impress](https://www.libreoffice.org/discover/impress/) using the
 [Montserrat](https://fonts.google.com/specimen/Montserrat)
 and [FiraCode](https://github.com/tonsky/FiraCode) fonts available under the
 OFL license.
+
+The `code` folder contains Jupyter notebooks and Python scripts used to
+generate some of the figures shown in the slides.
+
+The `data` folder contains magnetic data from the Mt. Milligan,
+British Columbia. The files were downloaded from
+[NRCAN](https://natural-resources.canada.ca/home) website, available under an
+[Open Government Licence, Canada](
+https://open.canada.ca/en/open-government-licence-canada).
+
