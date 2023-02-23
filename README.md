@@ -10,8 +10,8 @@
 |--|---|
 | When | March 4, 2023 |
 | Where | [KEGS 2023 Symposium](https://www.kegsonline.org), Toronto, Canada |
-| Abstract | [#abstract](Read abstract)  |
-| Extended abstract | [extended-abstract/README.md](Read extended abstract)  |
+| Abstract | [Read abstract](#abstract)  |
+| Extended abstract | [Read extended abstract](extended-abstract/README.md)  |
 | Presentation slides | [10.6084/m9.figshare.22151357](https://doi.org/10.6084/m9.figshare.22151357)  |
 
 ## Abstract
