@@ -1,0 +1,25 @@
+name: kegs2023
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python==3.10.*
+  - numpy==1.23.5
+  - xarray==2023.1.0
+  - pandas==1.5.3
+  - pyproj==3.4.1
+  - pygmt==0.8.0
+  - xrft==1.0.1
+  - matplotlib==3.7.0
+  - pyvista==0.38.1
+  - jupyter
+  - tectonic
+  - pip
+  # Fatiando packages
+  - pooch==1.6.0
+  - boule==0.4.1
+  - ensaio==0.5.0
+  - verde==1.7.0
+  - pip:
+      - git+https://github.com/fatiando/harmonica
+      - ppigrf

@@ -1,12 +1,18 @@
 # Fatiando a Terra: Open-source tools for geophysics
 
-## Authors
-
 [Santiago Soler](https://www.santisoler.com)<sup>1</sup>
 [Lindsey J. Heagy](https://lindseyjh.ca/)<sup>1</sup>
 
 > 1. Department of Earth, Ocean and Atmospheric Sciences, University of British
 >    Columbia
+
+|Information | |
+|--|---|
+| When | March 4, 2023 |
+| Where | [KEGS 2023 Symposium](https://www.kegsonline.org), Toronto, Canada |
+| Abstract | [Read abstract](#abstract)  |
+| Extended abstract | [Read extended abstract](extended-abstract/README.md)  |
+| Presentation slides | [10.6084/m9.figshare.22151357](https://doi.org/10.6084/m9.figshare.22151357)  |
 
 ## Abstract
 
